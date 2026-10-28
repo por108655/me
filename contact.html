@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ติดต่อฉัน | เว็บไซต์ของฉัน</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="contact.js" defer></script>
+</head>
+
+<body data-theme="pink">
+
+    <header class="hero">
+        <h1>✉️ ติดต่อฉัน</h1>
+        <p>ส่งข้อความมาพูดคุยกันได้นะครับ 💗</p>
+    </header>
+
+    <nav>
+        <a href="index.html">🏠 หน้าแรก</a>
+        <a href="about.html">💗 เกี่ยวกับฉัน</a>
+        <a href="contact.html" class="active">✉️ ติดต่อ</a>
+    </nav>
+
+    <main>
+        <section class="card">
+            <h2>💌 ส่งข้อความถึงผม</h2>
+
+            <p>
+                มีอะไรอยากพูดคุยหรือสอบถาม
+                สามารถกรอกข้อความด้านล่างได้เลยครับ
+            </p>
+
+            <form id="contactForm">
+                <label for="name">ชื่อของคุณ</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="กรอกชื่อของคุณ"
+                    required
+                    maxlength="100"
+                >
+
+                <label for="email">อีเมลของคุณ</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@email.com"
+                    required
+                    maxlength="254"
+                >
+
+                <label for="message">ข้อความ</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="พิมพ์ข้อความที่นี่..."
+                    required
+                    maxlength="5000"
+                ></textarea>
+
+                <button type="submit" class="btn">
+                    📩 ส่งข้อความทางอีเมล
+                </button>
+            </form>
+
+            <p id="status" aria-live="polite"></p>
+
+            <p>
+                หรือส่งอีเมลโดยตรงได้ที่
+                <a href="mailto:por108655@gmail.com">
+                    por108655@gmail.com
+                </a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>🌷 สร้างโดย นายเอื้ออังกูร หนองม่วง 🌷</p>
+    </footer>
+
+</body>
+</html>

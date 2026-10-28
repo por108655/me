@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแรก | เว็บไซต์ของฉัน</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🌷 ยินดีต้อนรับสู่เว็บไซต์ของฉัน</h1>
+    <p>พื้นที่เล็ก ๆ สำหรับแนะนำตัวเอง</p>
+</header>
+
+<nav>
+    <a href="index.html" class="active">🏠 หน้าแรก</a>
+    <a href="about.html">💗 เกี่ยวกับฉัน</a>
+    <a href="contact.html">✉️ ติดต่อ</a>
+</nav>
+
+<main>
+    <section class="card profile">
+        <div class="avatar">🌸</div>
+        <h2>สวัสดีครับ ผมชื่อเอื้ออังกูร</h2>
+        <p>
+            นายเอื้ออังกูร หนองม่วง<br>
+            ยินดีต้อนรับทุกคนเข้าสู่เว็บไซต์ส่วนตัวของผมครับ
+        </p>
+        <a class="btn" href="about.html">รู้จักผมมากขึ้น →</a>
+    </section>
+
+    <section class="card">
+        <h2>✨ เกี่ยวกับเว็บไซต์นี้</h2>
+        <p>
+            เว็บไซต์นี้จัดทำขึ้นเพื่อแนะนำตัวเอง
+            พร้อมฝึกทักษะการสร้างเว็บไซต์ด้วย HTML, CSS
+            และ JavaScript ตกแต่งด้วยสีพาสเทล
+            ให้ดูสบายตาและใช้งานง่าย
+        </p>
+    </section>
+
+    <section class="card profile">
+        <h2>💌 ขอบคุณที่เข้ามาเยี่ยมชม</h2>
+        <p id="welcome">กดปุ่มเพื่อรับข้อความทักทาย</p>
+        <button class="btn" onclick="greet()">กดรับคำทักทาย 🎀</button>
+    </section>
+</main>
+
+<footer>
+    <p>🌷 สร้างโดย นายเอื้ออังกูร หนองม่วง 🌷</p>
+</footer>
+
+<script>
+function greet() {
+    document.getElementById("welcome").textContent =
+        "ขอบคุณที่เข้าชมเว็บไซต์ของผมนะครับ ขอให้มีวันที่สดใส! 💖";
+}
+</script>
+
+</body>
+</html>
